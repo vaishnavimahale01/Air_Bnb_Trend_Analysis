@@ -1,35 +1,94 @@
-**Analysis Queries:**  
-   - Top 5 most popular locations by the number of listings:  
-     ```sql
-     SELECT Location, COUNT(ListingID) AS TotalListings 
-     FROM AirbnbListings 
-     GROUP BY Location 
-     ORDER BY TotalListings DESC 
-     LIMIT 5;
-     ```
-   - Average price by room type and location:  
-     ```sql
-     SELECT RoomType, Location, AVG(Price) AS AvgPrice 
-     FROM AirbnbListings 
-     GROUP BY RoomType, Location;
-     ```
-   - Seasonal demand pattern based on availability:  
-     ```sql
-     SELECT Location, AVG(Availability) AS AvgAvailability 
-     FROM AirbnbListings 
-     GROUP BY Location;
-     ```
-   - Highest-rated listings with more than 50 reviews:  
-     ```sql
-     SELECT HostName, Location, Rating 
-     FROM AirbnbListings 
-     WHERE Rating >= 4.5 AND NumberOfReviews > 50 
-     ORDER BY Rating DESC;
-     ```
-   - Pricing trend by location:  
-     ```sql
-     SELECT Location, Price 
-     FROM AirbnbListings 
-     ORDER BY Price DESC 
-     LIMIT 10;
-     ```
+-- ============================
+-- Airbnb Data Analysis Script
+-- ============================
+
+-- 1️⃣ Top 5 Most Popular Locations (Based on Listings Count)
+SELECT 
+    Location, 
+    COUNT(ListingID) AS Total_Listings 
+FROM 
+    AirbnbListings 
+GROUP BY 
+    Location 
+ORDER BY 
+    Total_Listings DESC 
+LIMIT 5;
+
+-- 2️⃣ Average Price by Room Type and Location
+SELECT 
+    Location, 
+    RoomType, 
+    AVG(Price) AS Average_Price 
+FROM 
+    AirbnbListings 
+GROUP BY 
+    Location, RoomType
+ORDER BY 
+    Average_Price DESC;
+
+-- 3️⃣ Highest Rated Listings with more than 50 Reviews
+SELECT 
+    HostName, 
+    Location, 
+    Rating, 
+    NumberOfReviews 
+FROM 
+    AirbnbListings 
+WHERE 
+    Rating >= 4.5 AND NumberOfReviews > 50 
+ORDER BY 
+    Rating DESC, NumberOfReviews DESC;
+
+-- 4️⃣ Price Trend Analysis (Top 10 most expensive listings)
+SELECT 
+    ListingID,
+    HostName,
+    Location,
+    Price,
+    RoomType
+FROM 
+    AirbnbListings 
+ORDER BY 
+    Price DESC 
+LIMIT 10;
+
+-- 5️⃣ Seasonal Availability Check
+SELECT 
+    Location, 
+    AVG(Availability) AS Avg_Availability 
+FROM 
+    AirbnbListings 
+GROUP BY 
+    Location 
+ORDER BY 
+    Avg_Availability DESC;
+
+-- 6️⃣ Total Revenue Calculation
+SELECT 
+    SUM(Price) AS Total_Revenue 
+FROM 
+    AirbnbListings;
+
+-- 7️⃣ Listings with Minimum Nights greater than 5
+SELECT 
+    ListingID, 
+    HostName, 
+    RoomType, 
+    MinimumNights 
+FROM 
+    AirbnbListings 
+WHERE 
+    MinimumNights > 5
+ORDER BY 
+    MinimumNights DESC;
+
+-- 8️⃣ Room Type Distribution
+SELECT 
+    RoomType, 
+    COUNT(ListingID) AS Count 
+FROM 
+    AirbnbListings 
+GROUP BY 
+    RoomType
+ORDER BY 
+    Count DESC;
