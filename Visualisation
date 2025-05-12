@@ -1,0 +1,105 @@
+Calculates the total revenue generated from all listings.
+
+dax
+Copy
+Edit
+Total Revenue = SUM('Airbnb_Listing_Data'[Price])
+Average Price per Room Type:
+Finds the average price for each type of room (Entire Home, Private Room, Shared Room).
+
+dax
+Copy
+Edit
+Average Price = AVERAGE('Airbnb_Listing_Data'[Price])
+Total Listings Count:
+Displays the number of Airbnb listings.
+
+dax
+Copy
+Edit
+Total Listings = COUNT('Airbnb_Listing_Data'[Listing ID])
+High-Demand Locations:
+Finds the top 5 most booked cities.
+
+dax
+Copy
+Edit
+Top Cities = 
+TOPN(
+    5,
+    SUMMARIZE(
+        'Airbnb_Listing_Data',
+        'Airbnb_Listing_Data'[Location],
+        "Total Listings", COUNT('Airbnb_Listing_Data'[Listing ID])
+    ),
+    [Total Listings], 
+    DESC
+)
+Total Reviews Count:
+Total number of reviews for all listings.
+
+dax
+Copy
+Edit
+Total Reviews = SUM('Airbnb_Listing_Data'[NumberOfReviews])
+Average Rating:
+Average rating of all Airbnb listings.
+
+dax
+Copy
+Edit
+Average Rating = AVERAGE('Airbnb_Listing_Data'[Rating])
+Seasonal Demand Analysis:
+Calculates the average availability based on the month.
+
+dax
+Copy
+Edit
+Seasonal Demand = AVERAGE('Airbnb_Listing_Data'[Availability])
+Top 10 Expensive Listings:
+Top 10 expensive listings by price.
+
+dax
+Copy
+Edit
+Top Expensive Listings = 
+TOPN(
+    10, 
+    'Airbnb_Listing_Data', 
+    'Airbnb_Listing_Data'[Price], 
+    DESC
+)
+3️⃣ Visualizations to Create in Power BI
+Map Visualization:
+
+Data: Location, Total Listings.
+
+Purpose: Show geographic distribution of listings.
+
+Bar Chart:
+
+Data: Room Type, Average Price.
+
+Purpose: Compare average price by room type.
+
+Line Chart:
+
+Data: Last Review Date, Total Reviews.
+
+Purpose: Trend analysis of reviews over time.
+
+Table Visualization:
+
+Data: Host Name, Location, Rating.
+
+Purpose: Display top-rated hosts by location.
+
+Card Visuals:
+
+Total Listings, Total Revenue, Average Rating.
+
+Slicer:
+
+Filters for Location, Room Type, and Host Name.
+
+
