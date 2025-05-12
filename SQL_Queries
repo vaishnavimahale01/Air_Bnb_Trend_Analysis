@@ -1,0 +1,35 @@
+**Analysis Queries:**  
+   - Top 5 most popular locations by the number of listings:  
+     ```sql
+     SELECT Location, COUNT(ListingID) AS TotalListings 
+     FROM AirbnbListings 
+     GROUP BY Location 
+     ORDER BY TotalListings DESC 
+     LIMIT 5;
+     ```
+   - Average price by room type and location:  
+     ```sql
+     SELECT RoomType, Location, AVG(Price) AS AvgPrice 
+     FROM AirbnbListings 
+     GROUP BY RoomType, Location;
+     ```
+   - Seasonal demand pattern based on availability:  
+     ```sql
+     SELECT Location, AVG(Availability) AS AvgAvailability 
+     FROM AirbnbListings 
+     GROUP BY Location;
+     ```
+   - Highest-rated listings with more than 50 reviews:  
+     ```sql
+     SELECT HostName, Location, Rating 
+     FROM AirbnbListings 
+     WHERE Rating >= 4.5 AND NumberOfReviews > 50 
+     ORDER BY Rating DESC;
+     ```
+   - Pricing trend by location:  
+     ```sql
+     SELECT Location, Price 
+     FROM AirbnbListings 
+     ORDER BY Price DESC 
+     LIMIT 10;
+     ```
