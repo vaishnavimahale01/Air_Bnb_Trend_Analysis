@@ -1,0 +1,51 @@
+Listing ID	Host Name	Location	Room Type	Price	Minimum Nights	Availability	Number of Reviews	Rating	Last Review Date
+1001	Charlie	Los Angeles	Shared Room	363	8	12	410	3.1	01-01-2024
+1002	Bob	New York	Shared Room	150	8	279	501	3.3	08-01-2024
+1003	Alice	Seattle	Private Room	68	5	364	599	4.6	15-01-2024
+1004	Alice	Seattle	Private Room	398	1	90	305	3.2	22-01-2024
+1005	Alice	San Francisco	Shared Room	368	1	219	992	3.9	29-01-2024
+1006	Eve	Seattle	Entire Home	302	4	273	270	4	05-02-2024
+1007	Charlie	New York	Entire Home	153	4	140	81	4.8	12-02-2024
+1008	Alice	New York	Shared Room	267	4	39	617	4.1	19-02-2024
+1009	Eve	Seattle	Shared Room	482	6	295	489	4.5	26-02-2024
+1010	Eve	Seattle	Entire Home	247	5	251	414	3.8	04-03-2024
+1011	Eve	San Francisco	Private Room	326	3	70	961	3.9	11-03-2024
+1012	Diana	Los Angeles	Private Room	285	9	119	423	4.2	18-03-2024
+1013	Eve	New York	Private Room	100	7	123	770	4.5	25-03-2024
+1014	Eve	San Francisco	Private Room	281	5	301	259	4.6	01-04-2024
+1015	Alice	Los Angeles	Shared Room	337	8	14	169	3.2	08-04-2024
+1016	Alice	San Francisco	Private Room	267	7	141	69	3.3	15-04-2024
+1017	Eve	San Francisco	Private Room	401	3	364	211	3.9	22-04-2024
+1018	Diana	Chicago	Private Room	63	7	127	422	4.7	29-04-2024
+1019	Alice	Chicago	Private Room	411	7	145	526	4.8	06-05-2024
+1020	Alice	Seattle	Shared Room	375	8	83	203	4	13-05-2024
+1021	Diana	Seattle	Private Room	373	3	27	946	4.8	20-05-2024
+1022	Diana	San Francisco	Private Room	374	8	114	950	3.8	27-05-2024
+1023	Bob	Los Angeles	Entire Home	105	7	133	976	4.9	03-06-2024
+1024	Bob	Los Angeles	Private Room	462	1	340	752	4.5	10-06-2024
+1025	Eve	Seattle	Entire Home	281	4	212	610	3.6	17-06-2024
+1026	Bob	Seattle	Entire Home	395	2	151	282	4.5	24-06-2024
+1027	Bob	Seattle	Private Room	405	7	251	879	3.2	01-07-2024
+1028	Alice	Chicago	Private Room	481	7	323	934	4.8	08-07-2024
+1029	Eve	San Francisco	Private Room	425	4	214	70	4.6	15-07-2024
+1030	Diana	Chicago	Entire Home	412	3	227	770	4.6	22-07-2024
+1031	Alice	New York	Shared Room	151	7	259	133	3.4	29-07-2024
+1032	Eve	Chicago	Shared Room	336	8	309	878	3.2	05-08-2024
+1033	Eve	Seattle	Shared Room	169	1	231	262	4.2	12-08-2024
+1034	Bob	Chicago	Private Room	215	1	68	648	4.3	19-08-2024
+1035	Charlie	San Francisco	Shared Room	359	4	152	184	3.8	26-08-2024
+1036	Alice	Chicago	Private Room	419	4	324	527	4.5	02-09-2024
+1037	Eve	Los Angeles	Entire Home	248	5	87	758	4.5	09-09-2024
+1038	Charlie	Chicago	Private Room	404	9	84	655	3.2	16-09-2024
+1039	Charlie	San Francisco	Private Room	293	6	64	224	3.6	23-09-2024
+1040	Eve	Los Angeles	Shared Room	370	8	223	162	4.1	30-09-2024
+1041	Charlie	Los Angeles	Entire Home	71	2	0	75	4.7	07-10-2024
+1042	Alice	Seattle	Shared Room	221	2	161	45	3.3	14-10-2024
+1043	Alice	San Francisco	Shared Room	95	9	332	894	3.3	21-10-2024
+1044	Alice	Los Angeles	Private Room	367	4	174	3	3.9	28-10-2024
+1045	Eve	Seattle	Shared Room	353	8	53	439	3.2	04-11-2024
+1046	Diana	Los Angeles	Entire Home	480	1	162	175	3.3	11-11-2024
+1047	Bob	New York	Private Room	264	4	354	947	4.5	18-11-2024
+1048	Eve	San Francisco	Entire Home	61	9	348	972	3.8	25-11-2024
+1049	Alice	Seattle	Entire Home	276	5	10	979	3.9	02-12-2024
+1050	Diana	San Francisco	Entire Home	254	9	336	898	3.2	09-12-2024
