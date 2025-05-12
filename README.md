@@ -21,7 +21,7 @@ Airbnb-Data-Analysis/
 ├── analysis/
 │ └── SQL_Queries.sql # SQL scripts used for data analysis
 ├── visualizations/
-│ └── Tableau_Dashboard.twbx # Tableau workbook (if available)
+│ └── Power BI_Dashboard.twbx # Tableau workbook (if available)
 ├── README.md # Project documentation
 └── .gitignore # File to exclude unnecessary files
 
@@ -88,7 +88,7 @@ The dataset contains the following columns:
    
 ---
 
-## 📈 Tableau Visualization  
+## 📈 POWER BI Visualization  
 - **Price Distribution:** Bar charts and maps showing average prices by location.  
 - **Availability Heatmap:** Visualization of booking patterns throughout the year.  
 - **Top Hosts and Popular Locations:** Interactive dashboards showcasing high-performing listings.  
